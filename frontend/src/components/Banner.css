@@ -1,0 +1,22 @@
+.banner {
+    width: 100%;
+    background: linear-gradient(to left, rgba(12, 14, 16, 0.52), rgba(22, 22, 26, 0.73)), url(../assets/banner4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 49%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+}
+.banner-title {
+    font-weight: 900!important;
+    margin-inline: 0.5rem;
+}
+.banner-title.large {
+    font-size: clamp(2.3rem, 4vw, 5rem);
+}
+.banner-title.small {
+    font-size: clamp(1.2rem, 1.7vw, 3rem);
+}

@@ -1,0 +1,28 @@
+.mission-charts {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+.mission-control-links {
+    width: 100%;
+    margin-block:1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    column-gap: 0.2rem;
+    row-gap: 0.2rem;
+}
+.mission-text-metrics {
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:1000px) {
+    canvas {
+        width: 320px!important;
+    }
+}

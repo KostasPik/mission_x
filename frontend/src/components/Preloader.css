@@ -1,0 +1,26 @@
+.loader-container {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+.loader-text {
+    margin-bottom: 30px;
+}
+.loader {
+    width: 120px;
+    height: 20px;
+    -webkit-mask: linear-gradient(90deg,var(--background-color) 70%,#0000 0) 0/20%;
+    background: linear-gradient(var(--background-color) 0 0) 0/0% no-repeat #fff;
+    animation: l4 2s infinite steps(6);
+  }
+  @keyframes l4 {
+      100% {background-size:120%}
+  }
