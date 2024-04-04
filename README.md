@@ -9,7 +9,9 @@ A web panel for displaying real-time telemetry logs.
 <div style="display:flex; justify-content: space-between;">
 <img src="preview/fastify.svg" width="17%"/><img src="preview/mongo.svg" width="17%"/><img src="preview/nginx.svg" width="17%"/><img src="preview/react.svg" width="17%"/><img src="preview/docker.svg" width="17%"/>
 </div>
+
 ## Installation
+
 ### With Docker:
 
 ```bash
