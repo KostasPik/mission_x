@@ -15,7 +15,7 @@ A web panel for displaying real-time telemetry logs.
 A .env file is required inside the *backend* folder containing the following variables:
 ```bash
 SERVER_PORT=8000
-MONGODB_URI=<your mongodb uri connection string>
+MONGODB_URI=<your mongodb uri connection string. Use: mongodb://mongo:27017/test for docker>
 ```
 
 ### With Docker:
