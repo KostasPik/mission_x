@@ -2,7 +2,7 @@
 
 A web panel for displaying real-time telemetry logs.
 
-<img src="preview/mission.svg" width="100%"/>
+<img src="preview/mission.png" width="100%"/>
 
 
 ## Stack
