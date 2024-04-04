@@ -20,9 +20,19 @@ docker-compose up --build
 ### Without Docker
 Otherwise you must follow the instructions below (recommended only for debugging):
 
+Install required *backend* libraries by running:
+```bash
+npm install
+```
+
 You can run the Fastify backend by running:
 ```bash
 node index.js
+```
+
+Install required *frontend* libraries by running:
+```bash
+npm install
 ```
 
 Finally, run the React.JS frontend:
