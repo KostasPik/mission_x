@@ -24,6 +24,11 @@ Install required *backend* libraries by running:
 ```bash
 npm install
 ```
+A .env file is required inside the *backend* folder containing the following variables:
+```bash
+SERVER_PORT=8000
+MONGODB_URI=<your mongodb uri connection string>
+```
 
 You can run the Fastify backend by running:
 ```bash
