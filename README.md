@@ -46,30 +46,31 @@ The *mission configuration* accepts the following key-value pairs:
 An example *mission configuration* has the following form:
 ```JSON
 {
-    "missionID": 'A9CDEF7',
-    'description': 'Super simple mission.'
-    'metricsConfiguration': {
-        'speed': {
-            'representation': 'line',
-            'units': 'm/s'
+    "missionID": "A9CDEF7",
+    "description": "Simple mission."
+    "metricsConfiguration": {
+        "speed": {
+            "representation": "line",
+            "units": "m/s"
         },
-        'altitude': {
-            'representation': 'line',
-            'units': 'm'
+        "altitude": {
+            "representation": "line",
+            "units": "m"
         },
-        'battery_remaining': {
-            'representation': 'line',
-            'units': '%'
+        "battery_remaining": {
+            "representation": "line",
+            "units": "%"
         },
-        'latitude': {
-            'representation': 'number',
-            'units': '',
+        "latitude": {
+            "representation": "number",
+            "units": "",
         },
-        'longitude': {
-            'representation': 'number',
-            'units': '',
+        "longitude": {
+            "representation": "number",
+            "units": "",
         },
     }
+}
 ```
 
 After server receives the *mission configuration* it sends a 201 status code response (if it succeeds).
@@ -87,14 +88,14 @@ After *mission configuration* is registered correctly, your application can star
 An example *mission telemetry log* is of the form:
 ```JSON
 {
-        'missionID': 'A9CDEF7',
-        'timestamp': 1712242392,
-        'metrics': {
-            'speed': 72.3,
-            'altitude': 1045.3,
-            'battery_remaining': 78,
-            'latitude': 37.9838, # We keep 3 floating-points digits.
-            'longitude': 23.7275, # We keep 3 floating-points digits.
+        "missionID": "A9CDEF7",
+        "timestamp": 1712242392,
+        "metrics": {
+            "speed": 72.3,
+            "altitude": 1045.3,
+            "battery_remaining": 78,
+            "latitude": 37.9838,
+            "longitude": 23.7275,
         }
     }
 ```
