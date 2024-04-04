@@ -12,7 +12,6 @@ import string
 headers = {'Content-Type': 'application/json'}
 
 
-
 #   URL where mission configuration is registered
 MISSION_CONF_URL = 'http://localhost:8000/api/missions/register'
 
@@ -82,6 +81,8 @@ while 1:
     lat_offset = random.uniform(-1.5, 1.5)
     lon_offset = random.uniform(-1.5, 1.5)
     gps_coordinates = (athens_coordinates[0] + lat_offset, athens_coordinates[1] + lon_offset)
+    latitude = int(gps_coordinates[0] * 1000) / 1000, # We keep 3 floating-points digits.
+    longitude = int(gps_coordinates[1] * 1000) / 1000, # We keep 3 floating-points digits.
     data = {
         'missionID': MISSION_ID,
         'timestamp': timestamp,
@@ -89,8 +90,8 @@ while 1:
             'speed': speed,
             'altitude': altitude,
             'battery_remaining': battery_left,
-            'latitude': int(gps_coordinates[0] * 1000)/1000, # We keep 3 floating-points digits.
-            'longitude': int(gps_coordinates[1] * 1000)/1000, # We keep 3 floating-points digits.
+            'latitude': latitude, # We keep 3 floating-points digits.
+            'longitude': longitude, # We keep 3 floating-points digits.
         }
     }
 
