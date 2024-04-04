@@ -49,15 +49,12 @@ The *mission configuration* accepts the following key-value pairs:
 
 *missionID*: A 7 letter ID in order to identify each mission.
 
-*description*: (optional) A simple description of the mission.
-
 *metricsConfiguration*: A JSON object containing key-value pairs. Each key is a mission metric that we want to log and each value is a JSON object that contains the *representation* (used to know how to display the metric in the frontend. For example, representation 'line' makes a line-chart and representation 'number' only displays value as a number), as well as the *units* (the units of the metrics. For example units of speed: 'm/s').
 
 An example *mission configuration* has the following form:
 ```JSON
 {
     "missionID": "A9CDEF7",
-    "description": "Simple mission."
     "metricsConfiguration": {
         "speed": {
             "representation": "line",
